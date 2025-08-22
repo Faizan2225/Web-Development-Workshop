@@ -1,0 +1,91 @@
+#div-1 {
+  width: 100px;
+  height: 100px;
+
+  background-color: blueviolet;
+
+  /* change color of the content */
+  color: white;
+
+  border-width: 3px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 7px;
+  /* border-bottom-left-radius: 7px; */
+
+  padding-top: 10px;
+}
+
+#div-2 {
+  width: 50%;
+  height: 50%;
+  background-color: white;
+}
+
+h1 {
+  color: red;
+  font-size: 50px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+#flex-div {
+  width: 200px;
+  height: 200px;
+  background-color: aquamarine;
+
+  display: flex;
+  gap: 10px;
+
+  flex-direction: row;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+#flex-div div {
+  width: 10%;
+  height: 10%;
+  background-color: aliceblue;
+  border-width: 2px;
+  border-style: solid;
+}
+
+/* /// GRID */
+#grid-div {
+  width: 200px;
+  margin: 50px;
+  height: 200px;
+  background-color: blueviolet;
+
+  padding: 10px;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+
+  /* repeat, auto, fr, 20px */
+
+  grid-template-rows: repeat(2, 20px);
+
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+#grid-div div {
+  background-color: aliceblue;
+  border-width: 2px;
+  border-style: solid;
+}
+
+/* 
+
+units
+
+rem -> root em -> relative to root html font size
+em -> relative to parent element's font size
+% -> relative to parent element
+px -> fixed 
+
+*/
