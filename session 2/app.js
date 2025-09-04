@@ -10,9 +10,11 @@ let addressUMT = "UMT, Johar town, lahore, punjab, pakistan";
 
 const name = "Ali"; // -- > cant be changes
 
-console.log(addressUMT);
+// console.log(addressUMT);
 
 // data types
+
+// "sdfhsdjksdfsfei923" -> string
 
 ("UMT, Johar town, lahore, punjab, pakistan"); //->
 123; //-> int
@@ -22,14 +24,15 @@ console.log(addressUMT);
 // let success = false;
 
 // arrays -> ["faizan", "ali", "raza"]  -> list of items
+//  0        1        2
 
-let names = ["faizan", "ali", "raza"];
-
-// console.log(names);
+// let names = ["faizan", "ali", "raza"];
 
 // names.pop();
-names.unshift("another name");
-// console.log(names.includes("razaaaa"));
+// console.log(names);
+
+// names.unshift("another name");
+// console.log(names.includes("faizan"));
 
 // console.log(names);
 
@@ -39,11 +42,18 @@ let student = {
   name: "ali",
   age: 20,
   program: "CS",
+  address: {
+    city: "lahore",
+    country: "pakistan",
+  },
 };
 
 student.age = 24;
+// console.log(student.program);/
 
-console.log(Object.values(student));
+// console.log(Object.values(student));
+
+// --------------------------
 
 // LOOPS
 
@@ -53,8 +63,11 @@ console.log(Object.values(student));
 //   console.log(i);
 // }
 
+// 0, 1, 2, 3, 4, 5, 6, 7, 8, 9;
+
 // let success = true;
-// while (success) {
+// let i = 0;
+// while (i < 10) {
 //   console.log(i);
 //   i++;
 // }
@@ -63,7 +76,7 @@ console.log(Object.values(student));
 // do {
 //   console.log(i);
 //   i++;
-// } while (i < 10);
+// } while (false);
 
 // i - 10
 // false
@@ -79,35 +92,50 @@ function getStudent(name, age, program) {
 
 // getStudent("faizan", 19, "cs");
 
+// ASYNCRONOUS PROGRAMMING
+
 // promises
 
 // Pending, resolved, rejected
 
-console.log("STARTING CODE");
+// console.log("STARTING CODE");
 
-let myPromise = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    let success = true;
-    if ((success = true)) {
-      resolve("Promise Resolved.");
-    } else {
-      reject("Promise Rejected");
-    }
-  }, 2000);
-});
+// let myPromise = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     let success = true;
+//     if (success === true) {
+//       resolve("Promise Resolved after 2 seconds.");
+//     } else {
+//       reject("Promise Rejected");
+//     }
+//   }, 5000);
+// });
 
-myPromise
-  .then((result) => console.log(result))
-  .catch((error) => console.log(error));
+// myPromise
+//   .then((result) => console.log(result))
+//   .catch((error) => console.log(error));
 
-console.log("ENDING CODE");
+// console.log("ENDING CODE");
 
 //  async await
 
-async function getSuccess() {
-  console.log("Hello");
-  await new Promise((resolve) => setTimeout(() => resolve("resolved")), 2000);
-  console.log("Hello");
-}
+// console.log("STARTING CODE");
+
+// async function getSuccess() {
+//   console.log("Hello");
+//   console.log("Hello 2");
+//   console.log("Hello 3");
+//   await new Promise((resolve) => setTimeout(() => resolve("resolved")), 2000);
+//   console.log("Hello 2");
+// }
+
+// console.log("ENDING CODE");
 
 getSuccess();
+
+// DOM MANIPULATION
+let heading = document.getElementById("heading");
+
+function handleButtonClick() {
+  console.log("BUTTON CLICKED");
+}
